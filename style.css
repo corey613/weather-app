@@ -25,7 +25,7 @@ body {
 #container {
   width: 500px;
   height: 800px;
-  background: url("img/mid.jpg");
+  background: url("mid.jpg");
   border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;

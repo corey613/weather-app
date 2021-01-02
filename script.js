@@ -1,6 +1,7 @@
 var btn = document.getElementById("submit");
 var inputValue = document.getElementById("inputValue");
 var backgroundC = document.getElementById("container");
+var weatherCont = document.getElementById("weather");
 
 var cityName = document.getElementById("city");
 var currentDate = document.getElementById("date");
@@ -43,19 +44,24 @@ function getInput(){
 function showResults(weather){
     console.log(weather);
     cityName.innerText=`${weather.name}`;
+    if(`${weather.name}` == "undefined"){
+        weatherCont.style.display = "none";
+        cityName.style.display = "block";
+        cityName.innerText= "Not Found";
+    }
 
     let now = new Date();
     currentDate.innerText= dateBuilder(now);
     temp.innerText = `${Math.round(weather.main.temp)}°c`;
 
     if (`${Math.round(weather.main.temp)}` > 15 ){
-        backgroundC.style.background = "url(hot.jpg)"; 
+        backgroundC.style.background = "url(/img/hot.jpg)"; 
      }  
     if(`${Math.round(weather.main.temp)}` < 15 ){
-        backgroundC.style.background = "url(mid.jpg)";
+        backgroundC.style.background = "url(/img/mid.jpg)";
      }  
     if (`${Math.round(weather.main.temp)}` <= 0 ){
-       backgroundC.style.background = "url(cold.jpg)";
+       backgroundC.style.background = "url(/img/cold.jpg)";
     } 
    
    

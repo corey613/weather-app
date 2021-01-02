@@ -55,13 +55,13 @@ function showResults(weather){
     temp.innerText = `${Math.round(weather.main.temp)}°c`;
 
     if (`${Math.round(weather.main.temp)}` > 15 ){
-        backgroundC.style.background = "url(/img/hot.jpg)"; 
+        backgroundC.style.background = "url(hot.jpg)"; 
      }  
     if(`${Math.round(weather.main.temp)}` < 15 ){
-        backgroundC.style.background = "url(/img/mid.jpg)";
+        backgroundC.style.background = "url(mid.jpg)";
      }  
     if (`${Math.round(weather.main.temp)}` <= 0 ){
-       backgroundC.style.background = "url(/img/cold.jpg)";
+       backgroundC.style.background = "url(cold.jpg)";
     } 
    
    

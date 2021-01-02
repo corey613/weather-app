@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="container">
+
+
+        <div id="inputContainer">
+            <input type="text" id="inputValue" placeholder="Search For a city">
+            <button type="submit" id="submit">Search</button>
+        </div>
+
+     
+        <div id="centerCont">
+            <div id="place">
+             <h3 id="city">London</h3>
+             <p id="date"></p>
+            </div>
+
+            <div id="weather">
+                <h1 id="temp">10°c</h1>
+                <p id="forcast">Rain</p>
+                <p id="hiLow">High/Low:</p>
+            </div>
+    </div>
+
+    </div>
+
+    <script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBatKITzDL-ekQHjOMUhzonxTBlN1GqMHA&libraries=places"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container {
+  width: 500px;
+  height: 800px;
+  background: url("img/mid.jpg");
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #57ff65;
+  text-shadow: 0px 0px 10px #000000;
+}
+
+#container #inputContainer {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#container #inputContainer #inputValue {
+  width: 300px;
+  height: 40px;
+  margin: 0 20px;
+  letter-spacing: 1px;
+  text-indent: 5px;
+  font-size: 18px;
+  border-radius: 10px 0 10px 0;
+  outline: none;
+  border: solid 3px rgba(0, 0, 0, 0.274);
+  background: rgba(121, 121, 121, 0.685);
+}
+
+#container #inputContainer #inputValue::-webkit-input-placeholder {
+  font-size: 18px;
+  color: black;
+  letter-spacing: 1px;
+  text-indent: 5px;
+}
+
+#container #inputContainer #inputValue:-ms-input-placeholder {
+  font-size: 18px;
+  color: black;
+  letter-spacing: 1px;
+  text-indent: 5px;
+}
+
+#container #inputContainer #inputValue::-ms-input-placeholder {
+  font-size: 18px;
+  color: black;
+  letter-spacing: 1px;
+  text-indent: 5px;
+}
+
+#container #inputContainer #inputValue::placeholder {
+  font-size: 18px;
+  color: black;
+  letter-spacing: 1px;
+  text-indent: 5px;
+}
+
+#container #inputContainer button {
+  height: 40px;
+  width: 60px;
+  margin: 0 20px;
+  border-radius: 10px 0 10px 0;
+  outline: none;
+  border: none;
+  background: rgba(0, 0, 0, 0.877);
+  color: white;
+  cursor: pointer;
+}
+
+#container #inputContainer button:hover {
+  background: rgba(117, 117, 117, 0.877);
+}
+
+#container #centerCont {
+  width: 100%;
+  height: 600px;
+}
+
+#container #centerCont #place {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container #centerCont #place #city {
+  font-size: 70px;
+}
+
+#container #centerCont #place #date {
+  font-style: italic;
+  font-size: 16px;
+}
+
+#container #weather {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+#container #weather #temp {
+  font-size: 60px;
+}
+
+#container #weather #forcast {
+  font-style: italic;
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 700px) {
+  #container {
+    width: 350px;
+    height: 600px;
+  }
+  #container #inputContainer #inputValue {
+    margin: 0 15px;
+  }
+  #container #inputContainer button {
+    padding: 8px;
+    font-size: 12px;
+  }
+  #container #centerCont {
+    width: 100%;
+    height: 500px;
+  }
+  #container #weather {
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  #container {
+    width: 320px;
+    height: 600px;
+  }
+  #container #inputContainer #inputValue {
+    width: 200px;
+  }
+  #container #centerCont {
+    height: 800px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
